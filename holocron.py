@@ -25,7 +25,7 @@ try:
 except ImportError:
     errmsg(38265, 'Error importing some packages. Try typing "pip install pyqt" at the command prompt')
     exit()
-class Holocorn(QWidget): #Declare the main class. May the Force be with you! :)
+class Holocron(QWidget): #Declare the main class. May the Force be with you! :)
     def color(self, cur_object, color="green"): #We declare a method that changes the font color. It will come in handy many more times.
         self.palette = cur_object.palette()
         self.palette.setColor(QtGui.QPalette.WindowText, QtGui.QColor(color))
@@ -1079,7 +1079,7 @@ def decr(args):
         print("Запускаем GUI...")
         help()
         app = QApplication(sys.argv)
-        ex = Holocorn()
+        ex = Holocron()
         sys.exit(app.exec_())
 if __name__ == '__main__':
     def cui():  #Console User Interface
@@ -1106,7 +1106,7 @@ if __name__ == '__main__':
             cui()
         else:
             app = QApplication(sys.argv)
-            ex = Holocorn()
+            ex = Holocron()
             sys.exit(app.exec_())
     except StopIteration:
         errmsg(2347009, 'StopIteration error')
