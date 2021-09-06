@@ -26,7 +26,7 @@ try:  # We import some necessary libraries, packages and classes ...
     from PyQt5.QtCore import QCoreApplication
     from PyQt5.QtGui import (QFont, QIcon)
 except ImportError:
-    errmsg(38265, 'Error importing some packages. Try enter "pip install pyqt" at the command prompt')
+    errmsg(38265, 'Error importing some packages. Try enter "pip install pyqt5" at the command prompt')
     exit()
 
 
