@@ -272,7 +272,7 @@ class Holocron(QWidget):  # Declare the main class. May the Force be with you! :
             self.color(self.lbl31, "red")
             msg = 'Вы ничего не выбрали'
             if self.lan == 'en':
-                msg = 'You didn`t selected anything'
+                msg = 'You didn`t select anything'
             self.lbl31.setText(msg)
 
     def ch_outfile(self, text):
@@ -482,8 +482,8 @@ class Holocron(QWidget):  # Declare the main class. May the Force be with you! :
                 arr = ['Yes ', 'No  ']
             self.lne4.addItems(arr)
             self.lne.setToolTip('Encryption option (encrypt or decrypt)')
-            self.lne1.setToolTip(
-                'Choose a strong password, at least 8 characters, using uppercase and lowercase Latin letters, numbers and special characters')
+            self.lne1.setToolTip('Choose a strong password, at least 8 characters, using uppercase and lowercase '
+                                 'Latin letters, numbers and special characters')
             self.lne2.setToolTip('Full path to source file')
             self.lne3.setToolTip('Full path to destination file')
             self.lnel.setToolTip('Language')
@@ -508,7 +508,7 @@ class Holocron(QWidget):  # Declare the main class. May the Force be with you! :
             self.lbl13.setText('Enter the full path to the destination file')
             self.lbl14.setText('Delete the source file? (yes / no)')
             if self.file2 == '':
-                self.lbl233.setText('You didn`t selected anything')
+                self.lbl233.setText('You didn`t select anything')
             elif self.file2 == 'def':
                 self.lbl233.setText('Key file: default')
             else:
@@ -519,19 +519,19 @@ class Holocron(QWidget):  # Declare the main class. May the Force be with you! :
                 self.lbl3.setText('You choosed: Decrypt')
             self.lrlbl.setText('Current language:' + text)
             if self.password == '':
-                self.lbl31.setText('You didn`t selected anything')
+                self.lbl31.setText('You didn`t select anything')
             elif len(self.password) == 12:
                 self.lbl31.setText('Your password(do not forget to copy!):' + self.password)
             else:
                 self.lbl31.setText('Your password:' + self.password)
             if self.infile == '':
-                self.lbl32.setText('You didn`t selected anything')
+                self.lbl32.setText('You didn`t select anything')
             elif self.infile == 'def':
                 self.lbl32.setText('Start file: default')
             else:
                 self.lbl32.setText('Start file: ' + basename(self.infile))
             if self.outfile == '':
-                self.lbl33.setText('You didn`t selected anything')
+                self.lbl33.setText('You didn`t select anything')
             elif self.outfile == 'def':
                 self.lbl33.setText('End file: default')
             else:
